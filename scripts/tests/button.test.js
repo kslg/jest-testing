@@ -5,7 +5,8 @@
 // a bit that we want to test, it's the paragraph with the ID of "par".
  const buttonClick = require("../button");
 
- beforeAll(() => {
+ // could use beforeAll if there are more
+ beforeEach(() => {
      document.body.innerHTML = "<p id='par'></p>";
  });
  
